@@ -4,7 +4,7 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.title('Penguin Classifier')
+st.title('Penguin Classifier: A Machine Learning App')
 st.write("This app uses 6 inputs to predict the species of penguin using"
          "a model built on the Palmer's Penguins's dataset."
          "Use the form below to  get started")
