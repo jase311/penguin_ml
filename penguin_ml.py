@@ -9,6 +9,10 @@ st.write("This app uses 6 inputs to predict the species of penguin using"
          "a model built on the Palmer's Penguins's dataset."
          "Use the form below to  get started")
 
+password_guess = st.text_input('What is the Password?')
+if password_guess != 'streamlit password':
+    st.stop()
+
 penguin_df = pd.read_csv('penguins.csv')
 rf_pickle = open('random_forest_penguin.pickle', 'rb')
 map_pickle= open('output_penguin.pickle','rb')
