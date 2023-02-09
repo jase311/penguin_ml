@@ -10,7 +10,7 @@ st.write("This app uses 6 inputs to predict the species of penguin using"
          "Use the form below to  get started")
 
 password_guess = st.text_input('What is the Password?')
-if password_guess != 'streamlit password':
+if password_guess != 'streamlit_password':
     st.stop()
 
 penguin_df = pd.read_csv('penguins.csv')
